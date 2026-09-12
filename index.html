@@ -4,15 +4,15 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Sable &amp; Soleil — Table de plage pliable</title>
-<meta name="description" content="Table de plage pliable en aluminium anodisé. Livraison dans les 58 wilayas. Paiement à la livraison. À partir de 4 900 DZD." />
-<meta property="og:title" content="Sable &amp; Soleil — Table de plage pliable" />
-<meta property="og:description" content="Livraison 58 wilayas. Paiement à la livraison. À partir de 4 900 DZD." />
+<title>Boutique — Paiement à la livraison</title>
+<meta name="description" content="Livraison dans les 58 wilayas. Paiement à la livraison." />
+<meta property="og:title" content="Boutique — Paiement à la livraison" />
+<meta property="og:description" content="Livraison 58 wilayas. Paiement à la livraison." />
 <meta property="og:type" content="product" />
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Ctext x='50' y='68' font-family='Inter,sans-serif' font-size='58' font-weight='600' fill='%23fff' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
 
-<!-- ⚠️ Replace REPLACE_WITH_YOUR_PIXEL_ID with your Meta Pixel ID -->
+<!-- ⚠️ REPLACE: Meta Pixel ID -->
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -33,316 +33,7 @@
 <link rel="preload" href="fonts/inter-semibold.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin />
 
-<style>
-  @font-face { font-family: 'Inter'; src: url('fonts/inter-regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
-  @font-face { font-family: 'Inter'; src: url('fonts/inter-medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
-  @font-face { font-family: 'Inter'; src: url('fonts/inter-semibold.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
-
-  :root {
-    --paper:      #ffffff;
-    --ink:        #000000;
-    --line:       rgba(0, 0, 0, 0.12);
-    --line-mid:   rgba(0, 0, 0, 0.22);
-    --line-dark:  rgba(0, 0, 0, 0.45);
-    --muted:      rgba(0, 0, 0, 0.62);
-    --muted-soft: rgba(0, 0, 0, 0.42);
-    --radius:     2px;
-    --max-width:  1120px;
-    --fs-xs:   0.75rem;
-    --fs-sm:   0.8125rem;
-    --fs-base: 0.9375rem;
-    --fs-lg:   1.0625rem;
-    --fs-xl:   1.25rem;
-    --fs-2xl:  1.5rem;
-    --fs-3xl:  2rem;
-    --fs-4xl:  clamp(2.25rem, 4.5vw, 3.25rem);
-    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --sp-1: 8px; --sp-2: 16px; --sp-3: 24px; --sp-4: 32px;
-    --sp-5: 48px; --sp-6: 72px; --sp-7: 104px;
-  }
-
-  *, *::before, *::after { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-  body {
-    margin: 0; font-family: var(--font); font-size: var(--fs-base);
-    line-height: 1.7; color: var(--ink); background: var(--paper);
-    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-  }
-  img { max-width: 100%; display: block; }
-  a { color: var(--ink); text-decoration: none; transition: opacity 0.15s ease; }
-  a:hover { opacity: 0.55; }
-  button, input, select, textarea { font: inherit; color: inherit; }
-  :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
-
-  h1, h2, h3 { font-family: var(--font); font-weight: 500; color: var(--ink); letter-spacing: -0.025em; line-height: 1.15; margin: 0; }
-  h1 { font-size: var(--fs-4xl); font-weight: 500; letter-spacing: -0.035em; line-height: 1.05; }
-  h2 { font-size: var(--fs-3xl); font-weight: 500; letter-spacing: -0.028em; }
-  h3 { font-size: var(--fs-lg); font-weight: 500; letter-spacing: -0.012em; }
-  p { margin: 0; }
-
-  .eyebrow {
-    display: inline-block; font-size: var(--fs-xs); font-weight: 500;
-    letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted);
-  }
-  .container { max-width: var(--max-width); margin: 0 auto; padding: 0 var(--sp-3); }
-  section { padding: var(--sp-7) 0; }
-  @media (max-width: 700px) { section { padding: var(--sp-5) 0; } }
-
-  .img-slot {
-    position: relative; background: rgba(0, 0, 0, 0.03);
-    border: 1px solid var(--line); border-radius: var(--radius);
-    overflow: hidden; display: flex; align-items: center; justify-content: center;
-  }
-  .img-slot img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: inherit; }
-  .img-slot:not(:has(img))::after {
-    content: attr(data-label); font-size: var(--fs-xs); font-weight: 500;
-    letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-soft);
-    background: var(--paper); padding: 6px 12px;
-    border: 1px solid var(--line); border-radius: var(--radius);
-  }
-
-  .announce {
-    background: var(--ink); color: var(--paper); font-size: var(--fs-xs);
-    font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
-    text-align: center; padding: 14px var(--sp-2);
-  }
-  .announce strong { font-weight: 600; }
-
-  header.site {
-    position: sticky; top: 0; z-index: 50;
-    background: rgba(255, 255, 255, 0.92);
-    border-bottom: 1px solid var(--line);
-    backdrop-filter: saturate(180%) blur(12px);
-    -webkit-backdrop-filter: saturate(180%) blur(12px);
-  }
-  .nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
-  .logo { font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; font-size: var(--fs-xs); }
-  .nav-links { display: flex; gap: var(--sp-4); align-items: center; }
-  .nav-links a { color: var(--ink); font-size: var(--fs-xs); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; }
-  @media (max-width: 720px) { .nav-links { display: none; } }
-
-  .btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-    padding: 16px 28px; border-radius: var(--radius); font-weight: 500;
-    font-size: var(--fs-xs); letter-spacing: 0.14em; text-transform: uppercase;
-    border: 1px solid var(--ink); cursor: pointer;
-    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-    text-align: center; line-height: 1; white-space: nowrap;
-    background: var(--paper); color: var(--ink);
-  }
-  .btn:hover { background: var(--ink); color: var(--paper); opacity: 1; }
-  .btn-primary { background: var(--ink); color: var(--paper); }
-  .btn-primary:hover { background: var(--paper); color: var(--ink); }
-  .btn-block { display: flex; width: 100%; }
-  .btn[disabled] { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
-
-  .hero { padding: var(--sp-5) 0 var(--sp-6); }
-  .hero-carousel-wrap { max-width: 720px; margin: 0 auto var(--sp-5); }
-  @media (max-width: 700px) { .hero-carousel-wrap { margin-bottom: var(--sp-4); } }
-  .hero-content { text-align: center; max-width: 640px; margin: 0 auto; }
-  .hero h1 { margin: var(--sp-2) 0 var(--sp-3); }
-  .hero-lead { font-size: var(--fs-lg); color: var(--muted); max-width: 32rem; margin: 0 auto var(--sp-4); line-height: 1.6; }
-
-  .price-line { display: flex; align-items: baseline; justify-content: center; gap: 14px; margin-bottom: var(--sp-4); flex-wrap: wrap; }
-  .price-now { font-size: var(--fs-2xl); font-weight: 500; color: var(--ink); letter-spacing: -0.02em; }
-  .price-was { font-size: var(--fs-base); color: var(--muted-soft); text-decoration: line-through; }
-  .price-note { font-size: var(--fs-xs); font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
-  .price-note::before { content: '— '; }
-
-  .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
-  .hero-meta {
-    display: flex; gap: var(--sp-3); margin-top: var(--sp-4); padding-top: var(--sp-3);
-    border-top: 1px solid var(--line); flex-wrap: wrap; justify-content: center;
-    font-size: var(--fs-xs); color: var(--muted); letter-spacing: 0.08em;
-    text-transform: uppercase; font-weight: 500;
-  }
-  .hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
-  .hero-meta span::before { content: ''; width: 4px; height: 4px; background: var(--ink); border-radius: 50%; }
-
-  .carousel { position: relative; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--paper); }
-  .carousel-track { display: flex; transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1); will-change: transform; }
-  .carousel-slide { flex: 0 0 100%; min-width: 0; aspect-ratio: 4 / 5; position: relative; }
-  .carousel-slide.img-slot { border-radius: 0; border: none; }
-
-  .carousel-arrow {
-    position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px;
-    border-radius: 0; background: var(--paper); border: 1px solid var(--ink); color: var(--ink);
-    display: flex; align-items: center; justify-content: center; cursor: pointer;
-    transition: background 0.15s ease, color 0.15s ease; z-index: 2; padding: 0;
-  }
-  .carousel-arrow:hover { background: var(--ink); color: var(--paper); opacity: 1; }
-  .carousel-arrow.prev { left: 16px; }
-  .carousel-arrow.next { right: 16px; }
-  .carousel-arrow svg { width: 14px; height: 14px; }
-  @media (max-width: 600px) {
-    .carousel-arrow { width: 34px; height: 34px; }
-    .carousel-arrow.prev { left: 10px; }
-    .carousel-arrow.next { right: 10px; }
-  }
-
-  .carousel-dots { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; z-index: 2; }
-  .carousel-dot { width: 24px; height: 2px; background: rgba(255, 255, 255, 0.5); border: none; padding: 0; cursor: pointer; transition: background 0.2s ease; border-radius: 0; }
-  .carousel-dot[aria-selected="true"] { background: var(--paper); }
-  .carousel-dot:hover { background: var(--paper); }
-
-  .carousel-counter {
-    position: absolute; top: 16px; right: 16px; color: var(--ink);
-    font-size: var(--fs-xs); font-weight: 500; letter-spacing: 0.14em;
-    padding: 6px 10px; background: var(--paper); border: 1px solid var(--ink); z-index: 2;
-  }
-
-  .trust { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: var(--sp-3) 0; }
-  .trust-items { display: flex; justify-content: center; gap: var(--sp-5); flex-wrap: wrap; align-items: center; }
-  .trust-item { display: flex; align-items: center; gap: 10px; font-size: var(--fs-xs); color: var(--muted); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; }
-  .trust-item svg { color: var(--ink); flex-shrink: 0; width: 14px; height: 14px; }
-  @media (max-width: 700px) { .trust-items { gap: var(--sp-3); } .trust-item { font-size: 0.68rem; letter-spacing: 0.1em; } }
-
-  .section-head { max-width: 44rem; margin: 0 0 var(--sp-6); text-align: left; }
-  .section-head .eyebrow { display: block; margin-bottom: var(--sp-2); }
-  .section-head h2 { margin-bottom: var(--sp-2); }
-  .section-head p { color: var(--muted); font-size: var(--fs-lg); }
-  @media (max-width: 700px) { .section-head { margin-bottom: var(--sp-4); } }
-
-  .detail { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-6); align-items: center; }
-  .detail + .detail { margin-top: var(--sp-7); }
-  @media (max-width: 800px) { .detail { grid-template-columns: 1fr; gap: var(--sp-4); } .detail + .detail { margin-top: var(--sp-5); } }
-  .detail-img { aspect-ratio: 4 / 3; border-radius: var(--radius); }
-  .detail-text h3 { margin: var(--sp-2) 0 var(--sp-3); font-size: var(--fs-2xl); font-weight: 500; letter-spacing: -0.022em; }
-  .detail-text p { font-size: var(--fs-base); color: var(--muted); margin-bottom: var(--sp-3); }
-  .detail-list { list-style: none; padding: 0; margin: var(--sp-3) 0 0; display: flex; flex-direction: column; }
-  .detail-list li { display: flex; gap: 14px; align-items: flex-start; font-size: var(--fs-sm); color: var(--muted); padding: 14px 0; border-top: 1px solid var(--line); }
-  .detail-list li:last-child { border-bottom: 1px solid var(--line); }
-  .detail-list svg { color: var(--ink); flex-shrink: 0; margin-top: 4px; width: 12px; height: 12px; }
-
-  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
-  .feature { background: var(--paper); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: var(--sp-4); }
-  .feature-icon { width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center; color: var(--ink); margin-bottom: var(--sp-3); }
-  .feature h3 { margin-bottom: 8px; font-size: var(--fs-base); font-weight: 500; color: var(--ink); }
-  .feature p { color: var(--muted); font-size: var(--fs-sm); line-height: 1.65; }
-
-  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--sp-5); counter-reset: step; }
-  .step { position: relative; padding-top: var(--sp-3); border-top: 1px solid var(--ink); }
-  .step::before { counter-increment: step; content: '0' counter(step); display: block; font-size: var(--fs-xs); font-weight: 500; letter-spacing: 0.16em; color: var(--muted); margin-bottom: var(--sp-2); }
-  .step h3 { font-size: var(--fs-base); font-weight: 500; margin: 0 0 8px; color: var(--ink); }
-  .step p { font-size: var(--fs-sm); color: var(--muted); line-height: 1.65; }
-
-  .order-section { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .order-wrap { max-width: 560px; margin: 0 auto; }
-
-  .order-summary { background: var(--paper); border: 1px solid var(--ink); border-radius: var(--radius); padding: var(--sp-3); margin-bottom: var(--sp-4); }
-  .summary-row { display: flex; justify-content: space-between; align-items: baseline; gap: var(--sp-3); padding: 10px 0; font-size: var(--fs-sm); }
-  .summary-row + .summary-row { border-top: 1px solid var(--line); }
-  .summary-row .label-cell { color: var(--muted); }
-  .summary-row .value-cell { font-weight: 500; color: var(--ink); }
-  .summary-row.discount .value-cell::before { content: '− '; }
-  .summary-row.total { padding-top: var(--sp-2); margin-top: 4px; border-top: 2px solid var(--ink); }
-  .summary-row.total .label-cell { text-transform: uppercase; letter-spacing: 0.14em; font-size: var(--fs-xs); color: var(--ink); font-weight: 500; }
-  .summary-row.total .value-cell { font-size: var(--fs-2xl); font-weight: 500; letter-spacing: -0.02em; }
-  .summary-row.savings .value-cell { font-size: var(--fs-xs); letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; color: var(--ink); }
-
-  .qty-offer { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
-  .qty-offer-row {
-    display: flex; justify-content: space-between; padding: 8px 12px;
-    border: 1px solid var(--line); color: var(--muted); cursor: pointer;
-    transition: border-color 0.15s ease, color 0.15s ease;
-    background: transparent; font-family: inherit; font-size: var(--fs-xs);
-    text-align: left; width: 100%;
-  }
-  .qty-offer-row:hover { border-color: var(--line-mid); color: var(--ink); }
-  .qty-offer-row.active { border-color: var(--ink); color: var(--ink); font-weight: 500; }
-  .qty-offer-row .offer-save { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-  .qty-offer-row.active .offer-save { color: var(--ink); }
-
-  .mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 4px; }
-  @media (max-width: 480px) { .mode-grid { grid-template-columns: 1fr; } }
-  .mode-option {
-    position: relative; display: flex; flex-direction: column; gap: 4px;
-    padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius);
-    cursor: pointer; transition: border-color 0.15s ease;
-    text-align: left; background: transparent; font-family: inherit; width: 100%;
-  }
-  .mode-option:hover:not(.disabled) { border-color: var(--line-mid); }
-  .mode-option.active { border-color: var(--ink); background: rgba(0,0,0,0.02); }
-  .mode-option.disabled { opacity: 0.4; cursor: not-allowed; }
-  .mode-option .mode-label { font-size: var(--fs-sm); font-weight: 500; color: var(--ink); letter-spacing: 0; text-transform: none; }
-  .mode-option .mode-desc { font-size: var(--fs-xs); color: var(--muted); letter-spacing: 0; text-transform: none; font-weight: 400; line-height: 1.5; }
-  .mode-option .mode-price { font-size: var(--fs-sm); font-weight: 500; color: var(--ink); margin-top: 4px; }
-  .mode-option.disabled .mode-price { color: var(--muted); }
-
-  .mode-placeholder { font-size: var(--fs-sm); color: var(--muted); padding: 14px 16px; border: 1px dashed var(--line-mid); border-radius: var(--radius); text-align: center; }
-
-  form { display: flex; flex-direction: column; gap: var(--sp-3); }
-  .field { display: flex; flex-direction: column; gap: 8px; }
-  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-2); }
-  @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } }
-
-  label { font-size: var(--fs-xs); font-weight: 500; color: var(--ink); letter-spacing: 0.08em; text-transform: uppercase; }
-  label .req { color: var(--ink); margin-left: 4px; font-weight: 600; }
-  .hint { font-size: var(--fs-xs); color: var(--muted-soft); font-weight: 400; text-transform: none; letter-spacing: 0; }
-
-  input[type="text"], input[type="tel"], select, textarea {
-    padding: 12px 0; background: transparent; border: none;
-    border-bottom: 1px solid var(--line-dark); border-radius: 0;
-    font-size: var(--fs-base); color: var(--ink);
-    transition: border-color 0.15s ease; width: 100%; font-family: var(--font);
-  }
-  textarea { resize: vertical; min-height: 72px; font-family: inherit; padding: 12px 0; }
-  input::placeholder, textarea::placeholder { color: var(--muted-soft); }
-  input:focus, select:focus, textarea:focus { border-bottom-color: var(--ink); outline: none; }
-  select {
-    appearance: none;
-    background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%), linear-gradient(135deg, var(--ink) 50%, transparent 50%);
-    background-position: calc(100% - 12px) 50%, calc(100% - 7px) 50%;
-    background-size: 5px 5px, 5px 5px; background-repeat: no-repeat;
-    padding-right: 28px; cursor: pointer;
-  }
-
-  .quantity { display: inline-flex; align-items: center; border: 1px solid var(--ink); border-radius: var(--radius); overflow: hidden; background: transparent; width: fit-content; }
-  .quantity button { background: transparent; border: none; color: var(--ink); width: 44px; height: 44px; font-size: 1rem; cursor: pointer; transition: background 0.15s ease, color 0.15s ease; }
-  .quantity button:hover { background: var(--ink); color: var(--paper); }
-  .quantity input { width: 56px; height: 44px; text-align: center; border: none; border-left: 1px solid var(--ink); border-right: 1px solid var(--ink); background: transparent; font-weight: 500; font-size: var(--fs-base); padding: 0; color: var(--ink); }
-  .quantity input::-webkit-outer-spin-button, .quantity input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
-  .quantity input[type=number] { -moz-appearance: textfield; }
-
-  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
-
-  .cod-note { display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: var(--fs-sm); color: var(--muted); line-height: 1.6; }
-  .cod-note svg { color: var(--ink); flex-shrink: 0; margin-top: 3px; width: 14px; height: 14px; }
-  .cod-note strong { color: var(--ink); font-weight: 500; }
-
-  .form-msg { margin-top: 4px; font-size: var(--fs-sm); padding: 14px 16px; border-radius: var(--radius); display: none; line-height: 1.6; border: 1px solid var(--ink); }
-  .form-msg.show { display: block; }
-  .form-msg.success { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-  .form-msg.error { background: var(--paper); color: var(--ink); border-color: var(--ink); }
-  .form-msg a { color: inherit; text-decoration: underline; font-weight: 500; }
-
-  .faq { max-width: 780px; margin: 0 auto; }
-  details { border-bottom: 1px solid var(--line); padding: var(--sp-3) 0; }
-  details:first-of-type { border-top: 1px solid var(--line); }
-  details summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: var(--sp-3); font-weight: 500; font-size: var(--fs-lg); color: var(--ink); letter-spacing: -0.01em; line-height: 1.4; }
-  details summary::-webkit-details-marker { display: none; }
-  details summary::after { content: ''; width: 10px; height: 10px; border-right: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink); transform: rotate(45deg); transition: transform 0.2s ease; flex-shrink: 0; margin-top: -5px; }
-  details[open] summary::after { transform: rotate(-135deg); margin-top: 5px; }
-  details p { color: var(--muted); margin-top: var(--sp-2); font-size: var(--fs-base); line-height: 1.7; max-width: 62ch; }
-  details p a { text-decoration: underline; color: var(--ink); }
-
-  footer { background: var(--paper); border-top: 1px solid var(--line); padding: var(--sp-5) 0 var(--sp-6); color: var(--muted); font-size: var(--fs-xs); letter-spacing: 0.06em; }
-  @media (max-width: 700px) { footer { padding-bottom: 96px; } }
-  .footer-row { display: flex; justify-content: space-between; align-items: center; gap: var(--sp-3); flex-wrap: wrap; }
-  .footer-links { display: flex; gap: var(--sp-3); flex-wrap: wrap; }
-  .footer-links a { color: var(--muted); }
-  .footer-links a:hover { color: var(--ink); }
-
-  .sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--paper); border-top: 1px solid var(--ink); padding: 12px var(--sp-2); z-index: 60; }
-  @media (max-width: 700px) { .sticky-cta { display: block; } }
-  .sticky-cta .btn { width: 100%; padding: 16px; }
-
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-    html { scroll-behavior: auto; }
-    .carousel-track { transition: none; }
-  }
-</style>
+<link rel="stylesheet" href="theme.css" />
 </head>
 <body>
 
@@ -352,7 +43,7 @@
 
 <header class="site">
   <div class="container nav">
-    <div class="logo">Sable &amp; Soleil</div>
+    <div class="logo" id="brand-logo">Boutique</div>
     <nav class="nav-links" aria-label="Navigation principale">
       <a href="#produit">Produit</a>
       <a href="#commander">Commander</a>
@@ -370,16 +61,16 @@
           <div class="carousel-counter" aria-live="polite"><span id="carousel-current">1</span> / <span id="carousel-total">4</span></div>
           <div class="carousel-track" id="carousel-track">
             <div class="carousel-slide img-slot" data-label="Photo 1 — produit principal">
-              <!-- <img src="images/slide-1.jpg" alt="Table de plage pliable vue de face" loading="eager" /> -->
+              <img src="images/slide-1.jpg" alt="" loading="eager" />
             </div>
             <div class="carousel-slide img-slot" data-label="Photo 2 — pliée">
-              <!-- <img src="images/slide-2.jpg" alt="Table pliée rangée dans un sac" loading="lazy" /> -->
+              <img src="images/slide-2.jpg" alt="" loading="lazy" />
             </div>
             <div class="carousel-slide img-slot" data-label="Photo 3 — en situation">
-              <!-- <img src="images/slide-3.jpg" alt="Table installée sur la plage" loading="lazy" /> -->
+              <img src="images/slide-3.jpg" alt="" loading="lazy" />
             </div>
             <div class="carousel-slide img-slot" data-label="Photo 4 — détails">
-              <!-- <img src="images/slide-4.jpg" alt="Détail des pieds antidérapants" loading="lazy" /> -->
+              <img src="images/slide-4.jpg" alt="" loading="lazy" />
             </div>
           </div>
           <button type="button" class="carousel-arrow prev" id="carousel-prev" aria-label="Photo précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
@@ -389,13 +80,13 @@
       </div>
 
       <div class="hero-content">
-        <span class="eyebrow">Été 2026</span>
-        <h1>La table pliable pour vos journées en plein air.</h1>
-        <p class="hero-lead">Aluminium anodisé, plateau étanche, pieds antidérapants. Se plie en un geste et se glisse dans un sac.</p>
+        <span class="eyebrow" id="hero-eyebrow"></span>
+        <h1 id="hero-title"></h1>
+        <p class="hero-lead" id="hero-lead"></p>
         <div class="price-line">
-          <span class="price-now" id="hero-price">4 900 DZD</span>
-          <span class="price-was" id="hero-price-was">6 500 DZD</span>
-          <span class="price-note" id="hero-price-note">Édition lancement</span>
+          <span class="price-now" id="hero-price"></span>
+          <span class="price-was" id="hero-price-was" data-discount-only style="display:none;"></span>
+          <span class="price-note" id="hero-price-note" data-discount-only style="display:none;"></span>
         </div>
         <div class="hero-cta">
           <a href="#commander" class="btn btn-primary">Commander</a>
@@ -421,35 +112,31 @@
   <section id="produit">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Le produit</span>
-        <h2>Pensée pour durer. Conçue pour l'aventure.</h2>
-        <p>Chaque détail a été choisi pour une seule raison : que vous puissiez l'emporter partout sans y penser.</p>
+        <span class="eyebrow" id="detail1-eyebrow"></span>
+        <h2 id="detail1-title"></h2>
+        <p id="detail1-body"></p>
       </div>
 
       <div class="detail">
         <div class="detail-img img-slot" data-label="Photo — produit en gros plan">
-          <!-- <img src="images/detail-1.jpg" alt="Gros plan sur la table pliée" loading="lazy" /> -->
+          <img src="images/detail-1.jpg" alt="" loading="lazy" />
         </div>
         <div class="detail-text">
           <span class="eyebrow">Matériaux</span>
-          <h3>Aluminium anodisé, plateau étanche.</h3>
-          <p>Le plateau résiste à l'eau, au sable et aux UV. Un chiffon humide suffit à le remettre à neuf. Les pieds sont réglables sur trois hauteurs et s'adaptent à tous les terrains.</p>
-          <ul class="detail-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Aluminium anodisé, 800 g</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Supporte jusqu'à 15 kg</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Se plie et se range dans un sac</li>
-          </ul>
+          <h3 id="detail1b-title"></h3>
+          <p id="detail1b-body"></p>
+          <ul class="detail-list" id="detail1b-bullets"></ul>
         </div>
       </div>
 
       <div class="detail">
         <div class="detail-text">
-          <span class="eyebrow">Usage</span>
-          <h3>De la plage au pique-nique.</h3>
-          <p>Stable sur le sable, l'herbe, le gravier ou la pierre. Les pieds larges et antidérapants restent en place même quand la surface bouge.</p>
+          <span class="eyebrow" id="detail2-eyebrow"></span>
+          <h3 id="detail2-title"></h3>
+          <p id="detail2-body"></p>
         </div>
         <div class="detail-img img-slot" data-label="Photo — produit en situation">
-          <!-- <img src="images/detail-2.jpg" alt="Table utilisée lors d'un pique-nique" loading="lazy" /> -->
+          <img src="images/detail-2.jpg" alt="" loading="lazy" />
         </div>
       </div>
     </div>
@@ -461,12 +148,7 @@
         <span class="eyebrow">Caractéristiques</span>
         <h2>Ce qui la distingue.</h2>
       </div>
-      <div class="features">
-        <div class="feature"><div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05"/><path d="M12 22.08V12"/></svg></div><h3>Se plie en un geste</h3><p>Se replie à la taille d'un livre et se glisse dans un sac à main, un sac de plage ou une boîte à gants.</p></div>
-        <div class="feature"><div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M6 8l6-5 6 5"/><path d="M6 16l6 5 6-5"/></svg></div><h3>800 grammes</h3><p>Assez légère pour être portée toute la journée, assez solide pour supporter 15 kg sans fléchir.</p></div>
-        <div class="feature"><div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h20"/><path d="M5 12V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M5 12v6"/><path d="M19 12v6"/></svg></div><h3>Stable sur tout terrain</h3><p>Pieds larges et antidérapants. Elle reste droite sur le sable, l'herbe, le gravier ou la pierre.</p></div>
-        <div class="feature"><div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5S5 13 5 15a7 7 0 0 0 7 7z"/></svg></div><h3>Résistante à l'eau</h3><p>Aluminium anodisé et plateau étanche. Un chiffon humide suffit à la remettre à neuf.</p></div>
-      </div>
+      <div class="features" id="features-grid"></div>
     </div>
   </section>
 
@@ -490,25 +172,25 @@
       <div class="order-wrap">
         <div class="section-head" style="margin-bottom: var(--sp-4);">
           <span class="eyebrow">Commande</span>
-          <h2>Réservez votre table</h2>
+          <h2>Réservez votre commande</h2>
           <p>Remplissez le formulaire. Nous vous appellerons pour confirmer.</p>
         </div>
 
         <div class="order-summary" id="order-summary">
           <div class="summary-row product">
             <span class="label-cell">Produit</span>
-            <span class="value-cell" id="summary-product">Table de plage pliable</span>
+            <span class="value-cell" id="summary-product">—</span>
           </div>
           <div class="summary-row">
             <span class="label-cell">Quantité</span>
             <span class="value-cell" id="summary-qty">1</span>
           </div>
           <div class="summary-row">
-            <span class="label-cell">Sous-total</span>
-            <span class="value-cell" id="summary-subtotal">4 900 DZD</span>
+            <span class="label-cell">Prix unitaire</span>
+            <span class="value-cell" id="summary-unit">—</span>
           </div>
-          <div class="summary-row" id="summary-discount-row" style="display:none;">
-            <span class="label-cell">Remise lot</span>
+          <div class="summary-row" id="summary-discount-row" data-discount-only style="display:none;">
+            <span class="label-cell" id="summary-discount-label">Remise</span>
             <span class="value-cell" id="summary-discount">—</span>
           </div>
           <div class="summary-row" id="summary-delivery-row">
@@ -517,15 +199,15 @@
           </div>
           <div class="summary-row total">
             <span class="label-cell">Total à payer</span>
-            <span class="value-cell" id="summary-total">4 900 DZD</span>
+            <span class="value-cell" id="summary-total">—</span>
           </div>
-          <div class="summary-row savings" id="summary-savings-row" style="display:none;">
+          <div class="summary-row savings" id="summary-savings-row" data-discount-only style="display:none;">
             <span class="label-cell">Vous économisez</span>
             <span class="value-cell" id="summary-savings">—</span>
           </div>
         </div>
 
-        <!-- ⚠️ Replace REPLACE_WITH_YOUR_SCRIPT_ID with your Apps Script URL -->
+        <!-- ⚠️ REPLACE: Apps Script URL -->
         <form
           id="order-form"
           action="https://script.google.com/macros/s/REPLACE_WITH_YOUR_SCRIPT_ID/exec"
@@ -536,10 +218,10 @@
             <label>Quantité <span class="req">*</span></label>
             <div class="quantity">
               <button type="button" id="qty-dec" aria-label="Diminuer la quantité">−</button>
-              <input type="number" id="qty" name="quantity" value="1" min="1" max="3" readonly />
+              <input type="number" id="qty" name="quantity" value="1" min="1" readonly />
               <button type="button" id="qty-inc" aria-label="Augmenter la quantité">+</button>
             </div>
-            <div class="qty-offer" id="qty-offer"></div>
+            <span class="hint" id="qty-hint" data-discount-only style="display:none;"></span>
           </div>
 
           <div class="field">
@@ -594,7 +276,7 @@
             <div><strong>Paiement à la livraison.</strong> Vous ne payez rien maintenant. Vous réglez en espèces au livreur, après avoir vérifié votre colis.</div>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Confirmer la commande — 4 900 DZD</button>
+          <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Confirmer la commande</button>
           <div class="form-msg" id="form-msg" role="status" aria-live="polite"></div>
         </form>
       </div>
@@ -607,12 +289,7 @@
         <span class="eyebrow">Questions</span>
         <h2>Ce que vous nous demandez le plus souvent</h2>
       </div>
-      <details><summary>Est-ce que je dois payer quelque chose maintenant ?</summary><p>Non. Vous ne payez rien tant que vous n'avez pas reçu le colis. Le règlement se fait en espèces auprès du livreur, après vérification.</p></details>
-      <details><summary>Quel est le délai de livraison ?</summary><p>Nous expédions sous 24 heures. Le colis arrive généralement en 48 à 72 heures selon votre wilaya. Les wilayas du sud peuvent demander un jour supplémentaire.</p></details>
-      <details><summary>Comment sont calculés les frais de livraison ?</summary><p>Les frais dépendent de votre wilaya et du mode choisi. <strong>Au bureau</strong> (retrait au bureau du transporteur) est moins cher que <strong>à domicile</strong>. Le montant exact s'affiche automatiquement dans le formulaire quand vous sélectionnez votre wilaya.</p></details>
-      <details><summary>Puis-je commander plusieurs tables ?</summary><p>Oui — jusqu'à 3 par commande. À partir de 2, une remise lot est appliquée automatiquement.</p></details>
-      <details><summary>Puis-je refuser le colis ?</summary><p>Oui. Vous pouvez refuser à la livraison sans rien payer. Nous vous demandons simplement de nous prévenir par téléphone pour alerter le livreur.</p></details>
-      <details><summary>Comment vous contacter ?</summary><p>Par téléphone au <a href="tel:+213555000000" class="contact-phone-link">0555 00 00 00</a>, du samedi au jeudi de 9h à 18h, ou par email à <a href="mailto:contact@sable-soleil.dz" class="contact-email-link">contact@sable-soleil.dz</a>.</p></details>
+      <div id="faq-list"></div>
     </div>
   </section>
 
@@ -620,9 +297,9 @@
 
 <footer>
   <div class="container footer-row">
-    <div>© <span id="year"></span> <span class="contact-brand">Sable &amp; Soleil</span> — Alger, Algérie</div>
+    <div>© <span id="year"></span> <span class="contact-brand">—</span> — Alger, Algérie</div>
     <div class="footer-links">
-      <a href="tel:+213555000000" class="contact-phone-link">0555 00 00 00</a>
+      <a href="#" class="contact-phone-link">—</a>
       <a href="#faq">FAQ</a>
       <a href="#commander">Commander</a>
     </div>
@@ -630,181 +307,187 @@
 </footer>
 
 <div class="sticky-cta">
-  <a href="#commander" class="btn btn-primary" id="sticky-cta-btn">Commander — 4 900 DZD</a>
+  <a href="#commander" class="btn btn-primary" id="sticky-cta-btn">Commander</a>
 </div>
 
+<script src="content.js"></script>
 <script>
   (function () {
     'use strict';
 
-    /* ============================================================
-       ✏️  CONFIG — EDIT THIS BLOCK FOR A NEW PRODUCT
-       ============================================================ */
-    var CONFIG = {
-      productName: 'Table de plage pliable',
-      unitPrice:   4900,
-      priceWas:    6500,
-      priceNote:   'Édition lancement',
+    var C = window.CONTENT;
 
-      /* Bundle pricing: qty → total product price (no delivery) */
-      bundlePricing: {
-        1: 4900,
-        2: 8800,
-        3: 12300
-      },
+    if (!C) {
+      console.error('content.js failed to load. Check the file is present and has no syntax errors.');
+      return;
+    }
 
-      /* Delivery fees per wilaya. Keys must match the WILAYAS list below exactly. */
-      deliveryFees: {
-        '01 — Adrar':           { domicile: 1200, bureau: 850 },
-        '02 — Chlef':           { domicile: 700,  bureau: 400 },
-        '03 — Laghouat':        { domicile: 900,  bureau: 600 },
-        '04 — Oum El Bouaghi':  { domicile: 700,  bureau: 400 },
-        '05 — Batna':           { domicile: 700,  bureau: 400 },
-        '06 — Béjaïa':          { domicile: 600,  bureau: 350 },
-        '07 — Biskra':          { domicile: 800,  bureau: 500 },
-        '08 — Béchar':          { domicile: 1200, bureau: 850 },
-        '09 — Blida':           { domicile: 450,  bureau: 300 },
-        '10 — Bouira':          { domicile: 600,  bureau: 350 },
-        '11 — Tamanrasset':     { domicile: 1400, bureau: 1000 },
-        '12 — Tébessa':         { domicile: 800,  bureau: 500 },
-        '13 — Tlemcen':         { domicile: 700,  bureau: 400 },
-        '14 — Tiaret':          { domicile: 700,  bureau: 400 },
-        '15 — Tizi Ouzou':      { domicile: 500,  bureau: 300 },
-        '16 — Alger':           { domicile: 400,  bureau: 250 },
-        '17 — Djelfa':          { domicile: 800,  bureau: 500 },
-        '18 — Jijel':           { domicile: 600,  bureau: 350 },
-        '19 — Sétif':           { domicile: 600,  bureau: 350 },
-        '20 — Saïda':           { domicile: 700,  bureau: 400 },
-        '21 — Skikda':          { domicile: 600,  bureau: 350 },
-        '22 — Sidi Bel Abbès':  { domicile: 700,  bureau: 400 },
-        '23 — Annaba':          { domicile: 600,  bureau: 350 },
-        '24 — Guelma':          { domicile: 650,  bureau: 400 },
-        '25 — Constantine':     { domicile: 600,  bureau: 350 },
-        '26 — Médéa':           { domicile: 500,  bureau: 300 },
-        '27 — Mostaganem':      { domicile: 600,  bureau: 350 },
-        '28 — M\'Sila':         { domicile: 650,  bureau: 400 },
-        '29 — Mascara':         { domicile: 700,  bureau: 400 },
-        '30 — Ouargla':         { domicile: 1000, bureau: 700 },
-        '31 — Oran':            { domicile: 500,  bureau: 300 },
-        '32 — El Bayadh':       { domicile: 900,  bureau: 600 },
-        '33 — Illizi':          { domicile: 1400, bureau: 1000 },
-        '34 — Bordj Bou Arreridj': { domicile: 600, bureau: 350 },
-        '35 — Boumerdès':       { domicile: 450,  bureau: 300 },
-        '36 — El Tarf':         { domicile: 650,  bureau: 400 },
-        '37 — Tindouf':         { domicile: 1400, bureau: 1000 },
-        '38 — Tissemsilt':      { domicile: 700,  bureau: 400 },
-        '39 — El Oued':         { domicile: 900,  bureau: 600 },
-        '40 — Khenchela':       { domicile: 750,  bureau: 450 },
-        '41 — Souk Ahras':      { domicile: 700,  bureau: 400 },
-        '42 — Tipaza':          { domicile: 450,  bureau: 300 },
-        '43 — Mila':            { domicile: 600,  bureau: 350 },
-        '44 — Aïn Defla':       { domicile: 500,  bureau: 300 },
-        '45 — Naâma':           { domicile: 1000, bureau: 700 },
-        '46 — Aïn Témouchent':  { domicile: 650,  bureau: 400 },
-        '47 — Ghardaïa':        { domicile: 900,  bureau: 600 },
-        '48 — Relizane':        { domicile: 600,  bureau: 350 },
-        '49 — Timimoun':        { domicile: 1300, bureau: 950 },
-        '50 — Bordj Badji Mokhtar': { domicile: 1400, bureau: 1000 },
-        '51 — Ouled Djellal':   { domicile: 900,  bureau: 600 },
-        '52 — Béni Abbès':      { domicile: 1200, bureau: 850 },
-        '53 — In Salah':        { domicile: 1400, bureau: 1000 },
-        '54 — In Guezzam':      { domicile: 1500, bureau: 1100 },
-        '55 — Touggourt':       { domicile: 950,  bureau: 650 },
-        '56 — Djanet':          { domicile: 1500, bureau: 1100 },
-        '57 — El M\'Ghair':     { domicile: 900,  bureau: 600 },
-        '58 — El Meniaa':       { domicile: 1000, bureau: 700 }
-      },
-
-      defaultDeliveryFee: { domicile: 900, bureau: 600 },
-
-      contactPhone:     '0555 00 00 00',
-      contactPhoneHref: '+213555000000',
-      contactEmail:     'contact@sable-soleil.dz',
-      brandName:        'Sable & Soleil',
-
-      maxQty:   3,
-      currency: 'DZD',
-      debug:    false
-    };
-
-    var WILAYAS = [
-      '01 — Adrar', '02 — Chlef', '03 — Laghouat', '04 — Oum El Bouaghi',
-      '05 — Batna', '06 — Béjaïa', '07 — Biskra', '08 — Béchar',
-      '09 — Blida', '10 — Bouira', '11 — Tamanrasset', '12 — Tébessa',
-      '13 — Tlemcen', '14 — Tiaret', '15 — Tizi Ouzou', '16 — Alger',
-      '17 — Djelfa', '18 — Jijel', '19 — Sétif', '20 — Saïda',
-      '21 — Skikda', '22 — Sidi Bel Abbès', '23 — Annaba', '24 — Guelma',
-      '25 — Constantine', '26 — Médéa', '27 — Mostaganem', '28 — M\'Sila',
-      '29 — Mascara', '30 — Ouargla', '31 — Oran', '32 — El Bayadh',
-      '33 — Illizi', '34 — Bordj Bou Arreridj', '35 — Boumerdès', '36 — El Tarf',
-      '37 — Tindouf', '38 — Tissemsilt', '39 — El Oued', '40 — Khenchela',
-      '41 — Souk Ahras', '42 — Tipaza', '43 — Mila', '44 — Aïn Defla',
-      '45 — Naâma', '46 — Aïn Témouchent', '47 — Ghardaïa', '48 — Relizane',
-      '49 — Timimoun', '50 — Bordj Badji Mokhtar', '51 — Ouled Djellal',
-      '52 — Béni Abbès', '53 — In Salah', '54 — In Guezzam', '55 — Touggourt',
-      '56 — Djanet', '57 — El M\'Ghair', '58 — El Meniaa'
-    ];
-
-    /* ----- End of CONFIG ----- */
-
+    /* ---------- helpers ---------- */
     function formatPrice(amount) {
       if (amount === null || amount === undefined) return '';
-      return Number(amount).toLocaleString('fr-FR') + ' ' + CONFIG.currency;
+      return Number(Math.round(amount)).toLocaleString('fr-FR') + ' DZD';
+    }
+
+    function setText(id, value) {
+      var el = document.getElementById(id);
+      if (el && value != null) el.textContent = value;
+    }
+
+    function setHTML(id, html) {
+      var el = document.getElementById(id);
+      if (el) el.innerHTML = html;
+    }
+
+    /* ---------- discount logic ---------- */
+    function discountApplies(quantity) {
+      if (!C.discountEnabled) return false;
+      if (!(C.discountPercent > 0)) return false;
+      return quantity >= C.discountMinQty;
     }
 
     function priceFor(quantity) {
       var q = Math.max(1, parseInt(quantity, 10) || 1);
-      var fullPrice = q * CONFIG.unitPrice;
-      var bundle = CONFIG.bundlePricing && CONFIG.bundlePricing[q];
-      var subtotal = (typeof bundle === 'number') ? bundle : fullPrice;
-      var savings = Math.max(0, fullPrice - subtotal);
-      return { quantity: q, subtotal: subtotal, fullPrice: fullPrice, savings: savings };
+      var fullPrice = q * C.unitPrice;
+      if (discountApplies(q)) {
+        var discountAmount = fullPrice * (C.discountPercent / 100);
+        return {
+          quantity: q,
+          fullPrice: fullPrice,
+          subtotal: fullPrice - discountAmount,
+          savings: discountAmount,
+          discounted: true
+        };
+      }
+      return { quantity: q, fullPrice: fullPrice, subtotal: fullPrice, savings: 0, discounted: false };
     }
 
     function deliveryFeeFor(wilaya, mode) {
       if (!wilaya || !mode) return null;
-      var entry = CONFIG.deliveryFees[wilaya] || CONFIG.defaultDeliveryFee;
+      var entry = C.deliveryFees[wilaya] || C.defaultDeliveryFee;
       var fee = entry[mode];
       return (typeof fee === 'number') ? fee : null;
     }
 
-    function applyConfig() {
-      var heroPrice = document.getElementById('hero-price');
-      if (heroPrice) heroPrice.textContent = formatPrice(CONFIG.unitPrice);
+    /* ---------- fill static content ---------- */
+    function fillContent() {
+      // title and meta
+      document.title = C.brandName + ' — ' + C.productName;
+
+      setText('brand-logo', C.brandName);
+      setText('hero-eyebrow', C.heroEyebrow);
+      setText('hero-title', C.heroTitle);
+      setText('hero-lead', C.heroLead);
+      setText('hero-price', formatPrice(C.unitPrice));
 
       var heroWas = document.getElementById('hero-price-was');
-      if (heroWas) {
-        if (CONFIG.priceWas && CONFIG.priceWas > CONFIG.unitPrice) {
-          heroWas.textContent = formatPrice(CONFIG.priceWas);
-          heroWas.style.display = '';
-        } else { heroWas.style.display = 'none'; }
+      if (heroWas && C.priceWas && C.priceWas > C.unitPrice) {
+        heroWas.textContent = formatPrice(C.priceWas);
       }
 
       var heroNote = document.getElementById('hero-price-note');
-      if (heroNote && CONFIG.priceNote) heroNote.textContent = CONFIG.priceNote;
+      if (heroNote && C.priceNote) heroNote.textContent = C.priceNote;
 
-      var summaryProduct = document.getElementById('summary-product');
-      if (summaryProduct) summaryProduct.textContent = CONFIG.productName;
+      // detail 1
+      setText('detail1-eyebrow', C.detail1.eyebrow);
+      setText('detail1-title', C.detail1.title);
+      setText('detail1-body', C.detail1.body);
+      setText('detail1b-title', C.detail1.title);
+      setText('detail1b-body', C.detail1.body);
 
+      var bulletsEl = document.getElementById('detail1b-bullets');
+      if (bulletsEl && C.detail1.bullets) {
+        bulletsEl.innerHTML = '';
+        C.detail1.bullets.forEach(function (b) {
+          var li = document.createElement('li');
+          li.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>';
+          var span = document.createElement('span');
+          span.textContent = b;
+          li.appendChild(span);
+          bulletsEl.appendChild(li);
+        });
+      }
+
+      // detail 2
+      setText('detail2-eyebrow', C.detail2.eyebrow);
+      setText('detail2-title', C.detail2.title);
+      setText('detail2-body', C.detail2.body);
+
+      // features
+      var featuresGrid = document.getElementById('features-grid');
+      if (featuresGrid && C.features) {
+        featuresGrid.innerHTML = '';
+        C.features.forEach(function (f) {
+          var div = document.createElement('div');
+          div.className = 'feature';
+          var h3 = document.createElement('h3');
+          h3.textContent = f.title;
+          var p = document.createElement('p');
+          p.textContent = f.body;
+          div.appendChild(h3);
+          div.appendChild(p);
+          featuresGrid.appendChild(div);
+        });
+      }
+
+      // order summary product name
+      setText('summary-product', C.productName);
+
+      // contact info everywhere
       document.querySelectorAll('.contact-phone-link').forEach(function (el) {
-        el.textContent = CONFIG.contactPhone;
-        el.setAttribute('href', 'tel:' + CONFIG.contactPhoneHref);
-      });
-      document.querySelectorAll('.contact-email-link').forEach(function (el) {
-        el.textContent = CONFIG.contactEmail;
-        el.setAttribute('href', 'mailto:' + CONFIG.contactEmail);
+        el.textContent = C.contactPhone;
+        el.setAttribute('href', 'tel:' + C.contactPhoneHref);
       });
       document.querySelectorAll('.contact-brand').forEach(function (el) {
-        el.textContent = CONFIG.brandName;
+        el.textContent = C.brandName;
       });
 
       var yearEl = document.getElementById('year');
       if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // discount visibility
+      var on = C.discountEnabled && C.discountPercent > 0;
+      document.querySelectorAll('[data-discount-only]').forEach(function (el) {
+        el.style.display = on ? '' : 'none';
+      });
+
+      var qtyHint = document.getElementById('qty-hint');
+      if (qtyHint && on) {
+        qtyHint.textContent = 'À partir de ' + C.discountMinQty + ' unités : −' + C.discountPercent + '%';
+      }
+
+      var discLabel = document.getElementById('summary-discount-label');
+      if (discLabel && on) {
+        discLabel.textContent = 'Remise (' + C.discountPercent + '%)';
+      }
+
+      // FAQ
+      var faqList = document.getElementById('faq-list');
+      if (faqList && Array.isArray(C.faq)) {
+        faqList.innerHTML = '';
+        C.faq.forEach(function (item) {
+          var answer = item.a;
+          if (answer === 'CONTACT_AUTO') {
+            answer = 'Par téléphone au ' + C.contactPhone + ', du samedi au jeudi de 9h à 18h, ou par email à ' + C.contactEmail + '.';
+          }
+          var details = document.createElement('details');
+          var summary = document.createElement('summary');
+          summary.textContent = item.q;
+          var p = document.createElement('p');
+          p.textContent = answer;
+          details.appendChild(summary);
+          details.appendChild(p);
+          faqList.appendChild(details);
+        });
+      }
+
+      // quantity input max
+      var qtyInput = document.getElementById('qty');
+      if (qtyInput) qtyInput.setAttribute('max', String(C.maxQty));
     }
 
-    applyConfig();
+    fillContent();
 
-    /* Carousel */
+    /* ---------- carousel ---------- */
     (function initCarousel() {
       var root      = document.getElementById('product-carousel');
       var track     = document.getElementById('carousel-track');
@@ -814,7 +497,6 @@
       var dotsWrap  = document.getElementById('carousel-dots');
       var currentEl = document.getElementById('carousel-current');
       var totalEl   = document.getElementById('carousel-total');
-
       if (!root || !track || slides.length === 0) return;
 
       var total = slides.length;
@@ -839,9 +521,7 @@
       function render() {
         track.style.transform = 'translateX(' + (-index * 100) + '%)';
         currentEl.textContent = String(index + 1);
-        for (var i = 0; i < dots.length; i++) {
-          dots[i].setAttribute('aria-selected', i === index ? 'true' : 'false');
-        }
+        dots.forEach(function (d, i) { d.setAttribute('aria-selected', i === index ? 'true' : 'false'); });
       }
       function goTo(i) { index = ((i % total) + total) % total; render(); }
 
@@ -854,21 +534,20 @@
         if (e.key === 'ArrowRight') { goTo(index + 1); e.preventDefault(); }
       });
 
-      var touchStartX = 0, touchStartY = 0, touchActive = false;
-      var SWIPE_THRESHOLD = 40;
+      var tX = 0, tY = 0, tActive = false;
       root.addEventListener('touchstart', function (e) {
         if (e.touches.length !== 1) return;
-        touchStartX = e.touches[0].clientX;
-        touchStartY = e.touches[0].clientY;
-        touchActive = true;
+        tX = e.touches[0].clientX;
+        tY = e.touches[0].clientY;
+        tActive = true;
       }, { passive: true });
       root.addEventListener('touchend', function (e) {
-        if (!touchActive) return;
-        touchActive = false;
+        if (!tActive) return;
+        tActive = false;
         var t = e.changedTouches[0];
-        var dx = t.clientX - touchStartX;
-        var dy = t.clientY - touchStartY;
-        if (Math.abs(dx) < SWIPE_THRESHOLD) return;
+        var dx = t.clientX - tX;
+        var dy = t.clientY - tY;
+        if (Math.abs(dx) < 40) return;
         if (Math.abs(dy) > Math.abs(dx)) return;
         goTo(dx < 0 ? index + 1 : index - 1);
       }, { passive: true });
@@ -876,7 +555,7 @@
       render();
     })();
 
-    /* Form + pricing */
+    /* ---------- form ---------- */
     var form           = document.getElementById('order-form');
     var submitBtn      = document.getElementById('submit-btn');
     var msgEl          = document.getElementById('form-msg');
@@ -887,7 +566,7 @@
     var qtyInc         = document.getElementById('qty-inc');
     var qtyDec         = document.getElementById('qty-dec');
     var summaryQty     = document.getElementById('summary-qty');
-    var summarySubtotal = document.getElementById('summary-subtotal');
+    var summaryUnit    = document.getElementById('summary-unit');
     var summaryTotal   = document.getElementById('summary-total');
     var summaryDiscRow = document.getElementById('summary-discount-row');
     var summaryDisc    = document.getElementById('summary-discount');
@@ -895,51 +574,19 @@
     var summaryDelLbl  = document.getElementById('summary-delivery-label');
     var summarySaveRow = document.getElementById('summary-savings-row');
     var summarySave    = document.getElementById('summary-savings');
-    var qtyOfferEl     = document.getElementById('qty-offer');
     var stickyBtn      = document.getElementById('sticky-cta-btn');
     var nameEl         = document.getElementById('name');
     var phoneEl        = document.getElementById('phone');
     var addressEl      = document.getElementById('address');
     var honeypotEl     = document.getElementById('website');
 
-    if (wilayaSel) {
-      WILAYAS.forEach(function (w) {
-        var opt = document.createElement('option');
-        opt.value = w;
-        opt.textContent = w;
-        wilayaSel.appendChild(opt);
-      });
-    }
-
-    function buildOfferList() {
-      if (!qtyOfferEl) return;
-      qtyOfferEl.innerHTML = '';
-      Object.keys(CONFIG.bundlePricing).map(Number).sort(function (a, b) { return a - b; })
-        .forEach(function (q) {
-          var pricing = priceFor(q);
-          var row = document.createElement('button');
-          row.type = 'button';
-          row.className = 'qty-offer-row';
-          row.dataset.qty = String(q);
-
-          var left = document.createElement('span');
-          left.textContent = q + ' unité' + (q > 1 ? 's' : '') + ' — ' + formatPrice(pricing.subtotal);
-
-          var right = document.createElement('span');
-          right.className = 'offer-save';
-          right.textContent = pricing.savings > 0
-            ? 'Économisez ' + formatPrice(pricing.savings)
-            : 'Prix de base';
-
-          row.appendChild(left);
-          row.appendChild(right);
-          row.addEventListener('click', function () {
-            qtyInput.value = q;
-            updateTotal();
-          });
-          qtyOfferEl.appendChild(row);
-        });
-    }
+    // Populate wilaya dropdown
+    Object.keys(C.deliveryFees).forEach(function (w) {
+      var opt = document.createElement('option');
+      opt.value = w;
+      opt.textContent = w;
+      wilayaSel.appendChild(opt);
+    });
 
     function renderModeOptions() {
       if (!modeContainer || !wilayaSel) return;
@@ -952,8 +599,7 @@
         return;
       }
 
-      var fees = CONFIG.deliveryFees[w] || CONFIG.defaultDeliveryFee;
-
+      var fees = C.deliveryFees[w] || C.defaultDeliveryFee;
       [['domicile', 'À domicile', 'Livré à votre adresse'],
        ['bureau',   'Au bureau',   'Retrait au bureau du transporteur']
       ].forEach(function (spec) {
@@ -990,15 +636,13 @@
             updateTotal();
           });
         }
-
         modeContainer.appendChild(btn);
       });
     }
 
     function updateTotal() {
       if (!qtyInput || !summaryTotal || !submitBtn) return;
-
-      var q = Math.max(1, Math.min(CONFIG.maxQty, parseInt(qtyInput.value, 10) || 1));
+      var q = Math.max(1, Math.min(C.maxQty, parseInt(qtyInput.value, 10) || 1));
       qtyInput.value = q;
 
       var pricing = priceFor(q);
@@ -1006,11 +650,11 @@
       var mode   = modeInput ? modeInput.value : '';
       var fee    = deliveryFeeFor(wilaya, mode);
 
-      if (summaryQty)      summaryQty.textContent = String(q);
-      if (summarySubtotal) summarySubtotal.textContent = formatPrice(pricing.subtotal);
+      if (summaryQty)  summaryQty.textContent = String(q);
+      if (summaryUnit) summaryUnit.textContent = formatPrice(C.unitPrice);
 
       if (summaryDiscRow && summaryDisc) {
-        if (pricing.savings > 0) {
+        if (pricing.discounted) {
           summaryDiscRow.style.display = '';
           summaryDisc.textContent = formatPrice(pricing.savings);
         } else {
@@ -1034,7 +678,7 @@
       if (stickyBtn) stickyBtn.textContent = 'Commander — ' + formatPrice(grandTotal);
 
       if (summarySaveRow && summarySave) {
-        if (pricing.savings > 0) {
+        if (pricing.discounted) {
           summarySaveRow.style.display = '';
           summarySave.textContent = formatPrice(pricing.savings) + ' sur ce lot';
         } else {
@@ -1042,38 +686,27 @@
         }
       }
 
-      if (qtyOfferEl) {
-        var rows = qtyOfferEl.querySelectorAll('.qty-offer-row');
-        for (var i = 0; i < rows.length; i++) {
-          var isActive = parseInt(rows[i].dataset.qty, 10) === q;
-          rows[i].classList.toggle('active', isActive);
-          rows[i].setAttribute('aria-pressed', isActive ? 'true' : 'false');
-        }
-      }
-
       if (modeContainer) {
-        var cards = modeContainer.querySelectorAll('.mode-option');
-        for (var j = 0; j < cards.length; j++) {
-          cards[j].classList.toggle('active', cards[j].dataset.mode === mode);
-        }
+        modeContainer.querySelectorAll('.mode-option').forEach(function (card) {
+          card.classList.toggle('active', card.dataset.mode === mode);
+        });
       }
     }
 
-    if (qtyInc) qtyInc.addEventListener('click', function () {
+    qtyInc.addEventListener('click', function () {
       var q = parseInt(qtyInput.value, 10) || 1;
-      if (q < CONFIG.maxQty) { qtyInput.value = q + 1; updateTotal(); }
+      if (q < C.maxQty) { qtyInput.value = q + 1; updateTotal(); }
     });
-    if (qtyDec) qtyDec.addEventListener('click', function () {
+    qtyDec.addEventListener('click', function () {
       var q = parseInt(qtyInput.value, 10) || 1;
       if (q > 1) { qtyInput.value = q - 1; updateTotal(); }
     });
-    if (wilayaSel) wilayaSel.addEventListener('change', function () {
+    wilayaSel.addEventListener('change', function () {
       modeInput.value = '';
       renderModeOptions();
       updateTotal();
     });
 
-    buildOfferList();
     renderModeOptions();
     updateTotal();
 
@@ -1133,7 +766,7 @@
 
       if (!isConfigured) {
         setMessage(
-          "Le formulaire n'est pas encore configuré. Appelez-nous au " + CONFIG.contactPhone + " pour finaliser votre commande.",
+          "Le formulaire n'est pas encore configuré. Appelez-nous au " + C.contactPhone + " pour finaliser votre commande.",
           "error"
         );
         return;
@@ -1151,6 +784,10 @@
       var grandTotal = pricing.subtotal + (fee != null ? fee : 0);
 
       var payload = {
+        contentVersion:  C.version,
+        clientTimestamp: new Date().toISOString(),
+        clientTotal:     grandTotal,
+
         name:         (nameEl.value || '').trim(),
         phone:        normalizePhone(phoneEl.value),
         wilaya:       wilayaSel.value,
@@ -1159,16 +796,9 @@
         landmark:     (document.getElementById('landmark').value || '').trim(),
         quantity:     qty,
         notes:        (document.getElementById('notes').value || '').trim(),
-        product:      CONFIG.productName,
-        unitPrice:    CONFIG.unitPrice,
-        subtotal:     pricing.subtotal,
-        deliveryFee:  fee != null ? fee : 0,
-        total:        grandTotal,
-        savings:      pricing.savings,
+        product:      C.productName,
         page:         window.location.href
       };
-
-      if (CONFIG.debug) console.log('Order payload:', payload);
 
       var controller = new AbortController();
       var timeoutId = setTimeout(function () { controller.abort(); }, 15000);
@@ -1194,9 +824,9 @@
 
           if (typeof window.fbq === 'function' && window.fbq.loaded) {
             window.fbq('track', 'Lead', {
-              content_name: CONFIG.productName,
+              content_name: C.productName,
               value: grandTotal,
-              currency: CONFIG.currency,
+              currency: 'DZD',
               num_items: qty
             });
           }
@@ -1214,10 +844,7 @@
           var prefix = isTimeout
             ? "La connexion a pris trop de temps."
             : "Impossible d'envoyer votre commande.";
-          setMessage(
-            prefix + " Veuillez réessayer, ou appelez-nous au " + CONFIG.contactPhone + ".",
-            "error"
-          );
+          setMessage(prefix + " Veuillez réessayer, ou appelez-nous au " + C.contactPhone + ".", "error");
         })
         .finally(function () {
           submitBtn.disabled = false;
@@ -1236,10 +863,10 @@
           if (entry.isIntersecting && !fired) {
             fired = true;
             window.fbq('track', 'ViewContent', {
-              content_name: CONFIG.productName,
+              content_name: C.productName,
               content_type: 'product',
-              value: CONFIG.unitPrice,
-              currency: CONFIG.currency
+              value: C.unitPrice,
+              currency: 'DZD'
             });
             observer.disconnect();
           }
@@ -1257,9 +884,9 @@
         if (fired) return;
         fired = true;
         window.fbq('track', 'InitiateCheckout', {
-          content_name: CONFIG.productName,
-          value: CONFIG.unitPrice,
-          currency: CONFIG.currency
+          content_name: C.productName,
+          value: C.unitPrice,
+          currency: 'DZD'
         });
       }, { once: true });
     })();
